@@ -19,6 +19,10 @@ implementation group: 'io.cucumber', name: 'cucumber-java', version: '4.2.0'
 testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '4.2.0'
 }
 
+// test {
+//     systemProperty "cucumber.options", System.getProperty("cucumberOptions")
+// }
+
 test {
-    systemProperty "cucumber.options", System.getProperty("cucumberOptions")
+    systemProperty "cucumber.options", System.getProperty("cucumber.options")
 }
